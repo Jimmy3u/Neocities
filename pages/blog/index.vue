@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blogPosts">
     <h1>Blog Posts</h1>
     <div v-for="post of posts" :key="post.slug">
       <div>

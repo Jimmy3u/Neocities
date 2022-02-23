@@ -3,6 +3,8 @@
     <h1>{{ cont.title }}</h1>
     <p>Postado em {{ formatDate(cont.createdAt) }}</p>
     <nuxt-content :document="cont" />
+
+    <a href="/blog">Voltar</a>
   </article>
 </template>
 
@@ -16,12 +18,12 @@ export default {
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('pt', options)
-    }
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString("pt", options);
+    },
   },
-  head(){
-    return { title : this.cont.title + " | site"}
-  }
+  head() {
+    return { title: this.cont.title + " | site" };
+  },
 };
 </script>

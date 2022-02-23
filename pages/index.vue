@@ -1,11 +1,11 @@
-<template> 
- <div>uau</div>
+<template>
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officiis unde velit dolor, reiciendis ipsa voluptatum facilis delectus odio fugiat ullam deleniti commodi rerum, earum accusantium officia optio dolores magni nobis a! Consectetur, iusto, nisi ducimus asperiores natus expedita deserunt tenetur velit odio enim, error iure voluptate temporibus aspernatur maxime repudiandae? Accusamus distinctio nam quis minima laborum error quibusdam atque libero suscipit enim. Quis incidunt, quas ratione dolorum, neque sed molestias itaque officia esse recusandae sit corporis. Maxime distinctio minus eius a facilis sit tempore, itaque voluptas, eligendi quam animi possimus nihil repellendus numquam autem doloribus aspernatur est, impedit voluptatem. Perspiciatis harum sequi dolorem cum aspernatur id, eos dignissimos incidunt quos odit beatae eaque obcaecati nihil debitis, aliquid sunt magni? Temporibus inventore minima debitis expedita exercitationem odit blanditiis voluptas alias et quod adipisci nihil, unde beatae necessitatibus enim, asperiores sequi tempore quaerat aperiam cupiditate ratione? Magni illum culpa sapiente? Iusto ad modi sequi maiores quae reprehenderit culpa explicabo impedit suscipit rem, dolorem saepe reiciendis, omnis tenetur hic, quidem perspiciatis non temporibus. Eum eos ratione, commodi esse consectetur magnam assumenda tenetur magni illum error dignissimos earum, officiis doloremque quae. Laborum repellat similique minima id voluptates corporis nostrum aspernatur, quas dicta, non maiores dolorum maxime eius itaque illum, dolores veniam at quaerat totam ducimus et odit libero? In nam voluptatibus iusto dicta culpa voluptas cumque totam sunt beatae adipisci reprehenderit sapiente impedit iste sequi expedita eaque, tenetur atque? Possimus magni corrupti autem, ut velit delectus iusto cum libero exercitationem quaerat modi! Molestias et minus veritatis exercitationem facere omnis atque alias harum quidem sint molestiae neque saepe corporis numquam perspiciatis in blanditiis labore sunt tempore, error autem officiis voluptatibus. Excepturi culpa vitae, sequi vel facere blanditiis voluptatum perferendis tempora labore tenetur consectetur suscipit eos officia laboriosam itaque perspiciatis cumque quos eligendi sint a.
+        <img src="https://c.tenor.com/qBYH22fSZSAAAAAC/toilet-spin.gif" alt="A spining Toilet">
+    </article>
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style>
