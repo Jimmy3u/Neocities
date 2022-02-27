@@ -3,8 +3,8 @@
     <h1>Blog Posts</h1>
     <div v-for="post of posts" :key="post.slug">
       <div>
-        <NuxtLink :to="{ name: 'blogPost', params: { slug: post.slug } }">
-          <h2>{{ post.title }}</h2></NuxtLink>
+        <NuxtLink :to="{ name: 'blogPost', params: { slug: post.slug } }" class="title">
+          {{ post.title }}</NuxtLink>
         <p>{{ post.description }}</p>
       </div>
     </div>

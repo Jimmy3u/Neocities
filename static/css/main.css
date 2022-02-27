@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Major+Mono+Display&display=swap");
+
+body {
+  background-color: #093A3E;
+  color: #FBFAF8;
+  font-family: "Comic Neue";
+}
 
 .menu {
-  font-family: "Major Mono Display", monospace;
   text-transform: uppercase;
   width: 75%;
   padding-top: 1%;
@@ -19,17 +24,27 @@
 a:visited {
   padding: 1em;
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
-a:hover {
-  color: rgb(44, 155, 175);
+.menu a:hover, a:hover {
+  color: #1B998B;
 }
 .content {
   width: 50%;
   padding: 2rem;
   margin: auto;
+  font-size: 1.2em;
 }
 
 .content img {
-    float: right;
+  float: right;
+}
+
+.title {
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.blogPost a{
+  text-decoration: none;
 }
