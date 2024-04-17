@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <script src="/assets/js/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+      hljs.configure({ ignoreUnescapedHTML: true });
+    </script>
+    <link rel="stylesheet" href="/assets/css/github.css" />
+  </head> 
+   <body>
+    <div id="container">
+      {% include navbar.html %}
+      <div id="flex">
+        <main>
+          <h1> {{ page.title }} </h1>
+          {% for tag in page.tags %}
+            {{tag}}
+          {% endfor %}
+          <h4>Posted on {{ page.date | date: "%-d %B %Y"}}</h3>
+          {{content}}
+        </main>
+      </div>
+    </div>
+    {%include footer.html %}
+  </body>
+</html>

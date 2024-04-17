@@ -1,0 +1,198 @@
+:root {
+  color-scheme: light dark;
+  --bg-light: #e2ddcc;
+  --fg-light: #363e41;
+  --accent-light: #47c8c0;
+  --accent-alt-light: #ff1688;
+
+  --bg-dark: #1f2324;
+  --fg-dark: #e2ddcc;
+  --accent-dark: #ff1688;
+  --accent-alt-dark: #47c8c0;
+}
+/* Tags to force light or dark mode */
+.light {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 450;
+  margin: 0;
+  background-color: light-dark(var(--bg-light), var(--bg-dark));
+  /* you can delete the line below if you'd prefer to not use an image */
+  background-size: 65px;
+  color: light-dark(var(--fg-light), var(--fg-dark));
+}
+
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#container a {
+  color: light-dark(var(--accent-light), var(--accent-dark));
+  font-weight: bold;
+}
+
+#header {
+  width: 100%;
+  /* header color here! */
+  height: 150px;
+  background-size: 100%;
+}
+
+#navbar {
+  width: 100%;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: light-dark(var(--accent-light), var(--accent-dark)) 2px solid;
+  padding-bottom: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+#navbar li {
+  padding-top: 1rem;
+}
+
+#navbar li a {
+  color: light-dark(var(--accent-light), var(--accent-dark));
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  color: #a49cba;
+}
+
+#flex {
+  display: flex;
+}
+
+aside {
+  width: 28%;
+  padding: 1rem;
+  font-size: smaller;
+}
+.homeImage{
+  width: 35%;
+  margin: 3%;
+}
+main {
+  flex: 1;
+  padding: 1rem;
+  order: 2;
+  max-width: 100%;
+}
+
+*/ #leftSidebar {
+  order: 1;
+}
+
+#rightSidebar {
+  order: 3;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+h3,
+h4 {
+  font-family: "Rubik", sans-serif;
+  color: light-dark(var(--accent-light), var(--accent-dark));
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+  color: light-dark(var(--accent-alt-light), var(--accent-alt-dark));
+}
+strong {
+  color: light-dark(var(--accent-light), var(--accent-dark));
+}
+
+.box {
+  color: light-dark(var(--accent-light), var(--accent-dark));
+  border: 2px solid #5a676b;
+  padding: 1rem;
+}
+
+#topBar {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: smaller;
+  background-color: #fff;
+}
+
+.postTitle a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: light-dark(var(--accent-alt-light), var(--accent-alt-dark));
+}
+.author {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+@media only screen and (max-width: 800px) {
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    order: 1;
+  }
+
+  #leftSidebar {
+    order: 2;
+  }
+
+  #rightSidebar {
+    order: 3;
+  }
+
+  #navbar ul {
+    flex-wrap: wrap;
+  }
+  .homeImage{
+    width: 45%;
+    margin: 3.5%;
+  }
+}

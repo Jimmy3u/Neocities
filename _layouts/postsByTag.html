@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div id="container">
+      {% include navbar.html %}
+      <div id="flex">
+        <main >
+            
+            {% assign sorted_tags = site.tags | sort %}
+            {% for tag in sorted_tags %} {% assign t = tag | first %} 
+            {% assign posts = tag | last %}
+                <h2 id="{{ t | downcase | replace:' ','-' }}">{{t}}</h2>
+                    {% for post in site.posts %}  
+                    {% if post.tags contains t %}
+                        <li>{{post.title}} - <a href="{{post.url}}"> link </a></li>
+                    {% endif %}
+                    {% endfor %}
+              
+            {% endfor %}
+        </main>
+        <aside id="rightSidebar">
+        <h2>Navigate by tag</h2>    
+        <ul>
+            {% for tag in sorted_tags %} {% assign t = tag | first %}
+                <li><a href="#{{ t | downcase | replace:' ','-' }}">{{t}}</a></li>
+            {%endfor%}
+            </ul>
+        </aside>
+      </div>
+    </div>
+    </div>
+    {%include footer.html %}
+  </body>
+</html>
