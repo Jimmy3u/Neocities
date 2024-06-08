@@ -10,19 +10,17 @@
     <link rel="stylesheet" href="/assets/css/github.css" />
   </head> 
    <body>
-    <div id="container">
+    <main id="container">
       {% include navbar.html %}
-      <div id="flex">
-        <main>
+        <section class="postContent">
           <h1> {{ page.title }} </h1>
           {% for tag in page.tags %}
             {{tag}}
           {% endfor %}
           <h4>Posted on {{ page.date | date: "%-d %B %Y"}}</h3>
           {{content}}
-        </main>
-      </div>
-    </div>
+          </section>
+      </main>
     {%include footer.html %}
   </body>
 </html>

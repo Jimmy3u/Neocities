@@ -1,6 +1,6 @@
 ---
 title: Projetos
-layout: default
+layout: portfolio
 permalink: /projects/
 ---
 

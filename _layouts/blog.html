@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  <main id="container">
+    {% include navbar.html %}
+    <section class="blogPosts">
+      {% for post in site.posts %}
+      <span class="postTitle">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </span>
+      <p class="author">
+        <span class="date">Postado em {{ post.date | date: "%-d %B %Y"}}</span>
+      </p>
+      {% endfor %}
+    </section>
+  </main>
+  </div>
+  {%include footer.html %}
+</body>
+
+</html>
