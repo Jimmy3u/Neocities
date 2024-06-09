@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 :root {
   color-scheme: light dark;
   --bg-light: #e2ddcc;
@@ -11,34 +13,41 @@
   --accent-alt-dark: #47c8c0;
 }
 
-.light {
-  color-scheme: light;
+* {
+  box-sizing: border-box;
 }
-.dark {
-  color-scheme: dark;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 body {
   font-family: "Quicksand", sans-serif;
   font-weight: 450;
   margin: 0;
-  background-color: light-dark(var(--bg-light), var(--bg-dark));
-  /* you can delete the line below if you'd prefer to not use an image */
+  background-color: var(--bg-dark);
   background-size: 65px;
-  color: light-dark(var(--fg-light), var(--fg-dark));
+  color: var(--fg-dark);
 }
 
 h1 {
   font-size: 1.8em;
 }
+
 h2 {
   font-size: 1.4rem;
 }
 
-* {
-  box-sizing: border-box;
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+  color: var(--accent-alt-dark);
+}
+
+h3,
+h4 {
+  font-family: "Rubik", sans-serif;
+  color: var(--accent-dark);
+}
+
+strong {
+  color: var(--accent-dark);
 }
 
 #container {
@@ -47,7 +56,7 @@ h2 {
 }
 
 #container a {
-  color: light-dark(var(--accent-light), var(--accent-dark));
+  color: var(--accent-dark);
   font-weight: bold;
 }
 
@@ -65,7 +74,7 @@ h2 {
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
-  border-bottom: light-dark(var(--accent-light), var(--accent-dark)) 2px solid;
+  border-bottom: var(--accent-dark) 2px solid;
   padding-bottom: 1rem;
 }
 
@@ -82,7 +91,7 @@ h2 {
 }
 
 #navbar li a {
-  color: light-dark(var(--accent-light), var(--accent-dark));
+  color: var(--accent-dark);
   text-decoration: none;
 }
 
@@ -95,14 +104,16 @@ h2 {
 }
 
 aside {
-  width: 28%;
+  width: 35%;
   padding: 1rem;
   font-size: smaller;
 }
-.homeImage{
+
+.homeImage {
   width: 35%;
   margin: 3%;
 }
+
 main {
   flex: 1;
   padding: 1rem;
@@ -127,42 +138,33 @@ footer {
   text-align: center;
 }
 
-h3,
-h4 {
-  font-family: "Rubik", sans-serif;
-  color: light-dark(var(--accent-light), var(--accent-dark));
-}
-
-h1,
-h2 {
-  font-family: "Roboto Slab", serif;
-  color: light-dark(var(--accent-alt-light), var(--accent-alt-dark));
-}
-strong {
-  color: light-dark(var(--accent-light), var(--accent-dark));
-}
-
 .box {
-  color: light-dark(var(--accent-light), var(--accent-dark));
+  color: var(--accent-dark);
   border: 2px solid #5a676b;
   padding: 1rem;
 }
 
-
 .postTitle a {
   text-decoration: none;
   font-size: 1.7rem;
-  color: light-dark(var(--accent-alt-light), var(--accent-alt-dark));
+  color: var(--accent-alt-dark);
 }
+
 .author {
   font-size: 0.9rem;
   margin-top: 0;
 }
 
-.blogPosts, .postContent{
-  margin-top: 1em;
+.blogPosts,
+.postContent {
   padding: 1rem;
 }
+.postContent img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
 @media only screen and (max-width: 800px) {
   #flexContainer {
     flex-wrap: wrap;
@@ -187,7 +189,8 @@ strong {
   #navbar ul {
     flex-wrap: wrap;
   }
-  .homeImage{
+
+  .homeImage {
     width: 45%;
     margin: 3.5%;
   }

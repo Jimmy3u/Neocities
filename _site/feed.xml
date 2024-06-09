@@ -1,1 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-07T20:53:31-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Uau</title><link href="http://localhost:4000/blog/2024/04/primeiro-post" rel="alternate" type="text/html" title="Uau" /><published>2024-04-16T00:00:00-03:00</published><updated>2024-04-16T00:00:00-03:00</updated><id>http://localhost:4000/blog/2024/04/primeiro-post</id><content type="html" xml:base="http://localhost:4000/blog/2024/04/primeiro-post"><![CDATA[<p>aaaa</p>]]></content><author><name></name></author><category term="Docker" /><summary type="html"><![CDATA[aaaa]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-09T04:08:20-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">Post testando tudo que da</title><link href="http://localhost:4000/blog/2024/06/Testando" rel="alternate" type="text/html" title="Post testando tudo que da" /><published>2024-06-09T00:00:00-03:00</published><updated>2024-06-09T00:00:00-03:00</updated><id>http://localhost:4000/blog/2024/06/Testando</id><content type="html" xml:base="http://localhost:4000/blog/2024/06/Testando"><![CDATA[<p>lorem ipsum</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sim"</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>Agora escrevendo</p>
+
+<p><img src="https://fiu-original.b-cdn.net/fontsinuse.com/use-images/N180/180916/180916.jpeg?filename=hoxzkber356a1.jpg" alt="Takanaka muito foda adoro ele" /></p>
+
+<p>Vamo escrever um pouquinho mais e um codigo em python</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">teste</span><span class="p">(</span><span class="n">nome</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">nome</span>
+</code></pre></div></div>
+
+<p><img src="https://pbs.twimg.com/profile_images/1797475009889181696/cm_LHNJ9_400x400.jpg" alt="" /></p>
+
+<p>Agora vamo de table</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 1 is</td>
+      <td style="text-align: center">left-aligned</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name></name></author><category term="Teste" /><category term="Codigo" /><category term="imagem" /><category term="uau" /><summary type="html"><![CDATA[lorem ipsum]]></summary></entry><entry><title type="html">Uau</title><link href="http://localhost:4000/blog/2024/04/primeiro-post" rel="alternate" type="text/html" title="Uau" /><published>2024-04-16T00:00:00-03:00</published><updated>2024-04-16T00:00:00-03:00</updated><id>http://localhost:4000/blog/2024/04/primeiro-post</id><content type="html" xml:base="http://localhost:4000/blog/2024/04/primeiro-post"><![CDATA[<p>aaaa</p>]]></content><author><name></name></author><category term="Docker" /><category term="Sim" /><category term="Carlos" /><summary type="html"><![CDATA[aaaa]]></summary></entry></feed>

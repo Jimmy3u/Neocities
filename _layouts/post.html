@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include head.html %}
-    <script src="/assets/js/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-      hljs.configure({ ignoreUnescapedHTML: true });
-    </script>
-    <link rel="stylesheet" href="/assets/css/github.css" />
-  </head> 
-   <body>
-    <main id="container">
-      {% include navbar.html %}
-        <section class="postContent">
-          <h1> {{ page.title }} </h1>
-          {% for tag in page.tags %}
-            {{tag}}
-          {% endfor %}
-          <h4>Posted on {{ page.date | date: "%-d %B %Y"}}</h3>
-          {{content}}
-          </section>
-      </main>
-    {%include footer.html %}
-  </body>
+
+<head>
+  {% include head.html %}
+  <script src="/assets/js/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+    hljs.configure({ ignoreUnescapedHTML: true });
+  </script>
+  <link rel="stylesheet" href="/assets/css/github.css" />
+</head>
+
+<body>
+  <main id="container">
+    {% include navbar.html %}
+    <section class="postContent">
+      <h1> {{ page.title }} </h1>
+      <h4>Posted on {{ page.date | date: "%-d %B %Y"}}</h3>
+
+        {{content}}
+
+      <span style="font-size: small;">
+          Tags: {% for tag in page.tags %} {{tag}} {% endfor %}
+      </span>
+    </section>
+  </main>
+  {%include footer.html %}
+</body>
+
 </html>
